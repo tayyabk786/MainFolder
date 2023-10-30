@@ -11,7 +11,7 @@ screen = pygame.display.set_mode((800, 600))
 #background
 background = pygame.image.load("images/backg.png")
 
-# Titile andIcon of the game
+# Titile andIcon of the game 
 pygame.display.set_caption("Alien Invaders")
 icon = pygame.image.load("images/ufo.png")
 pygame.display.set_icon(icon)
