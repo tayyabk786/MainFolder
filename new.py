@@ -9,15 +9,15 @@ pygame.init()
 screen = pygame.display.set_mode((800, 600))
 
 #background
-background = pygame.image.load("images/backg.png")
+background = pygame.image.load("MainFolder/images/backg.png")
 
 # Titile andIcon of the game 
 pygame.display.set_caption("Alien Invaders")
-icon = pygame.image.load("images/ufo.png")
+icon = pygame.image.load("MainFolder/images/ufo.png")
 pygame.display.set_icon(icon)
 
 # Player
-playerImg = pygame.image.load("images/spaceship.png")
+playerImg = pygame.image.load("MainFolder/images/spaceship.png")
 playerX = 370
 playerY = 480
 playerX_change = 0
@@ -32,18 +32,15 @@ enemyY_change = []
 num_of_enemies = 7
 
 for h in range(num_of_enemies):
-    enemyImg.append(pygame.image.load("images/alien-2.png"))
+    enemyImg.append(pygame.image.load("MainFolder/images/alien-2.png"))
     enemyX.append(random.randint (0, 735))
     enemyY.append(random.randint (50, 150))
     enemyX_change.append(3)
     enemyY_change.append(10)
  
 
-
-
-
 # Bullet
-bulletImg = pygame.image.load("images/bullet-4.png")
+bulletImg = pygame.image.load("MainFolder/images/bullet-4.png")
 bulletX = 0
 bulletY = 480
 bulletX_change = 0
@@ -144,13 +141,6 @@ while running:
         enemyX[h] = random.randint (0, 735)
         enemyY[h] = random.randint (50, 150)
         break
-
-
-   
-
-    
-
-
 
     player(playerX, playerY)
     enemy(enemyX[h], enemyY[h], h)
